@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Modifying Elements</title>
+</head>
+<body>
+    
+<h1 class="text-danger text-center text-uppercase">Modifying Elements</h1>
+<hr><br>
+
+    <div class="container-fluid">
+
+        <div class="fs-1 text-primary text-center">Box Modifiers: Width</div>
+         <div class="bg-dark">
+
+            <div class="w-25 bg-primary text-white p-2">w-25</div>
+            <div class="w-50 bg-success text-white p-2">w-50</div>
+            <div class="w-75 bg-warning text-white p-2">w-75</div>
+            <div class="w-100 bg-danger text-white p-2">w-100</div>
+            <div class="w-auto bg-info text-white p-2">w-auto</div>
+            <div class="mw-100 bg-secondary text-white p-2" style="width: 5000px;">mw-100</div>
+            <div class="vw-100 bg-secondary text-white p-2">vw-100</div>
+
+        </div>
+
+        <br>
+
+        <div class="fs-1 text-primary text-center">Box Modifiers: Hight</div>
+        <div class="bg-dark p-2 vh-100">
+
+           <div class="h-25 d-inline-block bg-primary text-white p-2">h-25</div>
+           <div class="h-50 d-inline-block bg-success text-white p-2">h-50</div>
+           <div class="h-75 d-inline-block bg-warning text-white p-2">h-75</div>
+           <div class="h-100 d-inline-block bg-danger text-white p-2">h-100</div>
+           <div class="h-auto d-inline-block bg-info text-white p-2">h-auto</div>
+           <div class="mh-100 d-inline-block bg-secondary text-white p-2" style="height: 600px;">mh-100</div>
+           <!-- <div class="vh-100 d-inline-block bg-secondary text-white p-2">vh-100</div> -->
+
+       </div>
+
+       <br>
+        <hr>
+
+     <div class="fs-1 text-primary text-center">Ratio: Film</div>
+    <h4 class="text-warning text-center">ratio-1x1</h4>
+
+        <div class="embed-responsive embed-responsive-4by3" style="display: flex; justify-content: center; align-items: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_I0zYHil4D8?si=mpFuOSwRUPLeuJ1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+        <h4 class="text-warning text-center">ratio-4x3</h4>
+        <div class="ratio ratio-1x1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_I0zYHil4D8?si=mpFuOSwRUPLeuJ1E" title="Taylor Swift - Anti Hero" frameborder="0"></iframe>
+        </div>
+
+        <br>
+
+        <h4 class="text-warning text-center">ratio-4x3</h4>
+       <div class="ratio ratio-4x3">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/_I0zYHil4D8?si=mpFuOSwRUPLeuJ1E" title="Taylor Swift - Anti Hero" frameborder="0"></iframe>
+        </div>
+
+        <br>
+        
+        <h4 class="text-warning text-center">ratio-16x9</h4>
+       <div class="ratio ratio-16x9">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/_I0zYHil4D8?si=mpFuOSwRUPLeuJ1E" title="Taylor Swift - Anti Hero" frameborder="0"></iframe>
+        </div>
+
+        <h4 class="text-warning text-center">ratio-21x9</h4>
+        <div class="ratio ratio-21x9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_I0zYHil4D8?si=mpFuOSwRUPLeuJ1E" title="Taylor Swift - Anti Hero" frameborder="0"></iframe>
+         </div>
+
+         <br>
+         <hr>
+         <br>
+
+         <h1 class="text-danger">Interactive classes</h1>
+
+         <h3 class="text-primary">Overflow</h3>
+
+        <div class="d-flex">
+            <div class="overflow-auto bg-info p-3" style="height: 150px;">
+                <h5>overflow-auto</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias perferendis a quo pariatur aliquam sequi corporis minima iure ab.</p>
+            </div>
+            <div class="overflow-hidden bg-info p-3" style="height: 150px;">
+                <h5>overflow-hidden</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias perferendis a quo pariatur aliquam sequi corporis minima iure ab.</p>
+            </div>
+            <div class="overflow-visible bg-info p-3" style="height: 150px;">
+                <h5>overflow-visible</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias perferendis a quo pariatur aliquam sequi corporis minima iure ab.</p>
+            </div>
+            <div class="overflow-scroll bg-info p-3" style="height: 150px;">
+                <h5>overflow-scroll</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias perferendis a quo pariatur aliquam sequi corporis minima iure ab.</p>
+            </div>
+        </div>
+        <br>
+      
+        <hr>
+
+        <h1 class="text-danger">stretched-link</h1>
+
+        <div class="position-relative bg-warning p-4 text-white" style="width: 450px;">
+        <img class="rounded img-fluid" src="img/Haga.JPG" alt="Girl listning to music"  style="height: 500px;" >
+        <h3 class="mt-2">Music girl</h3>
+        <p class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aspernatur!</p>
+        <a href="#" class="stretched-link text-decoration-none d-inline-block bg-danger rounded-2 text-white px-2 py-1">rock'n'roll</a>
+        </div>
+
+        <br>
+        <hr>
+
+        <h1 class="text-danger">user-select</h1>
+
+        <div class="d-flex">
+            <div class="position-relative bg-primary p-4 text-white">
+                <h3 class="mt-2">user-select-auto: Kan markera, kopiera ord</h3>
+                <p class="user-select-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat labore animi corporis ipsum voluptates voluptatem ea doloribus. Neque, saepe.</p>
+            </div>
+            <div class="position-relative bg-danger p-4 text-white">
+                <h3 class="mt-2">user-select-all: Markerar allt, kopiera</h3>
+                <p class="user-select-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat labore animi corporis ipsum voluptates voluptatem ea doloribus. Neque, saepe.</p>
+            </div>
+            <div class="position-relative bg-success p-4 text-white">
+                <h3 class="mt-2">user-select-none: Kan inte markera, kopiera ord</h3>
+                <p class="user-select-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat labore animi corporis ipsum voluptates voluptatem ea doloribus. Neque, saepe.</p>
+            </div>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <h1 class="text-danger">pointer-event</h1>
+
+
+       
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

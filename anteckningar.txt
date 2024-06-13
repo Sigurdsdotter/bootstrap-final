@@ -1,0 +1,89 @@
+*CONTAINER -  Viktigaste classen! Container justeras i storlek enligt mått: sm, md, lg, xl, xxl, fluid. Fluid är 100% med en margin på 16 px på varje sida.
+
+* PADDING - I css är t=top, r=right, b=bottom, l=left, x=båda sidor, y=både top och bottom.
+I Bootstrap byts r ut mot e=end och l mot s=start
+Koden för padding skrivs p{DIR}-{AMP} (DIR=direktion och AMP är enheter från 0-5)
+Ex: pt-4
+
+*MARGIN - Har samma mått, men även AMP auto.
+
+*DISPLAY - inline, inline-block, block, grid, table, table-cell, table-row, flex, inline-flex, none (none betyder inte att inline inte finns)
+
+*POSITION PROPERTIES - static, relative, absolute, fixed, sticky (relative placerar by default men man kan med extra kod justera positionen. Fixed: elementet rör sig relativt till viewport/browser window)
+Kod skrivs så här: {PRO}{POS} 
+PRO = top, start, bottom, end och translate-middle
+POS = 0, 50, 100 (50= mitten, 100= slutet)
+TRANSLATE translate-middle centrerar element i hörnen
+
+______________________________________________
+
+USING ELEMENTS:
+---------------------------------------------
+
+*TYPOGRAPHY - I Bootstrap kan man använda h1 - h6 som classer. Utöver finns andra typografier.
+h1= fs-1 h2=fs-2 osv (Motsvarar storleken, ej boldnes) / display-1, display-2 osv (Är större än motsvarand h tagg; display-1 är större än h1)
+lead = Text som ska sticka ut, ofta text överst på en sida får classen lead.
+
+*WEIGHT/STYLES - Skrivs fw-{WGT} T ex fw-bolder    WGT= lighter, light, normal, bold, bolder
+OBS: Måste vara medveten om att inte alla fonts stödjer denna weight class system.
+classen normal sätter stilen tillbaka till normal läge.
+Style - Italic skrivs fst-italic. När det sla tillbaka till normalläge skriver man fst-normal.
+
+*LINE HEIGHT Skrivs lh-{hgt}    HGT= 1, sm, base, lg
+
+*TEXT ALIGNMENT - Srivs: text{-br}-{typ} BR: sm, md, lg, xl / typ: start, center, end, responsive.
+OBS: När justerar skärmstorlek så hackar det och flexar mellan olika lägen, så är inte jätte pålitligt.
+
+*TEXT WRAPPING/BREAKING - text-wrap, text-nowrap, text-break Styr hur en text packas och bryter vid skärmstorlek justering.
+
+*TEXT TRANSFORM - text-lowercase, text-uppercase, text-capitalize (Gör första bokstaven stor)
+
+*VERTICAL ALIGNMENT - Skriv: align-{typ} Ex: baseline, top, middle, bottom, text-top, text-bottom
+
+*BLOCKQUOTES AND SIMPLE LISTS - Blockquotes har en font som gör den lite störe. Det finns en speciel footer version av denna class; om använda den footern så behöver man även en figure container.
+Blockquotes classer: blockquotes, blockquotes-footer, figure.
+Simple list: list-unstyled, list-inline, inline-item.       Allt listat hamnar på rad.. Varför? Bra för t ex screenreader! Så den vet den har att göra med en lista.
+
+*LIST GROUP - Classer: list-group, list-group-flush, list-group-horizontal-sm/md/lg/xl/xxl inkluderas i ul/ol. sm osv läggs till för brytpunkt. list-group list-group-flush tar bort vissa linjer i listan.
+list-group-item inkluderas i li.
+Kombinera med Modifiers: active aria-current="true", disabled tabinex="-1" aria-disabled="true", list-group-item-action är för listor man vill ska ha länkar, knappar och den har hover effekt.
+Färglägg listor med vanliga färgkoderna men sätt ihop med list-group-item. Ex: list-group-item-primary. Färgerna blir pastell.
+
+*TABLES
+------------------------------------------------
+
+* IMAGES - Srivs med img-fluid / img-thumbnail
+img-fluid anpassar sig till containerns storlek, den är responsive.
+
+*FIGURES
+classes: figure, figure-img, figure-caption 
+
+*BORDERS
+Kan lägga till färg: border-primary.
+Inte ha border: class border-0. Behöver border innan tas bort.
+Border tjocklek skrivs border-1. Finns 1-5 i tjocklek.
+Class rounded: Är border-radius. Kan välja hur mycke rundade hörn från 0 - 3.
+Man kan välja form rund och oval(vilket jag inte fick att fungera..).
+Skugga till bilder genom skapa class="img-thumbnail shadow" kan t ex välja shadow-none(reset), shadow-sm, shadow-lg
+
+______________________________________________________________
+
+MODIFYING ELEMENTS
+--------------------------------------------------------------
+
+*WIDTH - Justera storlek på element i container/box. Skriv class: w-25/50/75/100/auto/mw-100/vw-100
+mw-100 = max width. Om man skriver storlek som går utöver boxen så stannar den på 100% av boxen. (testa genom att byta ut 5000 mot 500px)
+vw-100 = view width. Fyller ut skärmen.
+
+*HEIGHT - Justera höjd: class w-25/50/75/100/auto/mh-100/vh-100
+Obs: Auto hight stämmer, den förhåller sig till dess element, är bara en oförutsägbar kod.
+
+*ASPECT RATIOS - För film. Class kod: ratio-{VAL}   VAL: 1x1, 4x3, 16x9, 21x9
+
+*OVERFLOW
+
+overflow-auto upptäcker om behövs en scroll bar då box är för liten för innehåll, medans overflow-scroll ger scrollbar oavsett.
+
+*STRETCHED LINK - Gör hela boxen, elementet klickbart.
+
+*USER SELECT - Class user-select-auto/all/none. Auto = koppiera text sellectivt. All = koppierar all text. None = Går inte koppiera text
